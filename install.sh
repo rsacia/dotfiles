@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=`find . -type f -not -path "./.git/*" -not -name "${0##*/}"`
+FILES=`find . -type f -not -path "./.git/*" -not -name "${0##*/}" -not -name "README.md"`
 
 for FILE in $FILES
 do

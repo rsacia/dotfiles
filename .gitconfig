@@ -1,0 +1,25 @@
+[core]
+    editor = vim
+    excludefile = ~/.gitignore_global
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = matching
+[alias]
+	st = status
+    ignore = update-index --assume-unchanged
+    unignore = update-index -no-assume-unchanged
+    mf = merge --ff-only
+    ri = rebase -i
+    rc = rebase --continue
+    lc = log ORIG_HEAD.. --stat --no-merges
+    lg = log --graph --pretty-format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    lp = log -p -1
+    who = shortlog -s --
+    di = diff --cached
+[include]
+    path = ~/.gitconfig-local
+    path = ~/.gitconfig-private
+

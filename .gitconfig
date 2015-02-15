@@ -15,7 +15,7 @@
     ri = rebase -i
     rc = rebase --continue
     lc = log ORIG_HEAD.. --stat --no-merges
-    lg = log --graph --pretty-format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
     lp = log -p -1
     who = shortlog -s --
     di = diff --cached
